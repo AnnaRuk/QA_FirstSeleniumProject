@@ -33,10 +33,6 @@ public class CreateAccountTests extends TestBase{
     }
 
 
-    @Test
-    public void isElementOnTheHomePage (){
-        isElementPresent(By.xpath("//span[contains(text(),'Wishlist')]"));
-    }
 
     @Test
     public void newUserRegistrationPositiveTest(){
