@@ -12,6 +12,12 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
+    String logIn = "//a[contains(text(),'Log in')]";
+    String logOut = "//a[contains(text(),'Log out')]";
+    String email = "//input[@id='Email']";
+    String password = "//input[@id='Password']";
+    String buttonLogInScc = "//body/div[4]/div[1]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/form[1]/div[5]/input[1]";
+
 
     WebDriver driver;
 
@@ -34,6 +40,13 @@ public class TestBase {
             return false;
         }
     }
+
+    public void cleanCart(){
+        driver.findElement(By.xpath(logOut)).click();
+
+    }
+
+
 
    @AfterMethod(enabled=false)
     //@AfterMethod()
