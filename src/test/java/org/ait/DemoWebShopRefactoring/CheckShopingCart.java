@@ -34,6 +34,7 @@ public class CheckShopingCart extends TestBase {
         Assert.assertTrue(checkTitleOfItemIntoCart());
         //2. check amount of item = >0
         Assert.assertTrue(checkAmoundOfItemIntoCart());
+        cleanCart();
     }
 
     public boolean checkTitleOfItemIntoCart(){
@@ -50,6 +51,6 @@ public class CheckShopingCart extends TestBase {
 
     @AfterMethod()
     public void tearDown(){
-        cleanCart();
+        //logOut();
     }
 }

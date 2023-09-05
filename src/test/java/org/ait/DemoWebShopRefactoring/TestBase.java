@@ -12,14 +12,6 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
-
-   // String logIn = "//a[contains(text(),'Log in')]";
-   // String logOut = "//a[contains(text(),'Log out')]";
-   // String email = "//input[@id='Email']";
-    //String password = "//input[@id='Password']";
-  //  String buttonLogInScc = "//body/div[4]/div[1]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/form[1]/div[5]/input[1]";
-
-
     WebDriver driver;
 
     @BeforeMethod
@@ -29,9 +21,6 @@ public class TestBase {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
-
-
-
 
     public boolean isElementPresent(By locator){
         try {
@@ -44,8 +33,14 @@ public class TestBase {
 
     //TODO remove item from cart
     public void cleanCart(){
-        driver.findElement(By.xpath("//a[contains(text(),'Log out')]")).click();
+        WebElement checkBox = driver.findElement(By.xpath("//tbody/tr[1]/td[1]/input[1]"));
+        checkBox.click();
+        driver.findElement(By.cssSelector(".button-2.update-cart-button")).click();
 
+    }
+
+    public void logOut(){
+        driver.findElement(By.xpath("//a[contains(text(),'Log out')]")).click();
     }
 
     public void click(By selector) {
@@ -58,13 +53,16 @@ public class TestBase {
         driver.findElement(locator).sendKeys(s);
     }
     public void goIntoCart() {
-        WebElement cartField = driver.findElement(By.xpath("//span[contains(text(),'Shopping cart')]"));
-        Actions actions = new Actions(driver);
-        actions.moveToElement(cartField).perform();
-        click(By.cssSelector("[value='Go to cart']"));
+//        WebElement cartField = driver.findElement(By.xpath("//span[contains(text(),'Shopping cart')]"));
+//        Actions actions = new Actions(driver);
+//        actions.moveToElement(cartField).perform();
+//        click(By.cssSelector("[value='Go to cart']"));
+
+        driver.findElement(By.xpath("//span[contains(text(),'Shopping cart')]")).click();
     }
-   //@AfterMethod(enabled=false)
-    @AfterMethod()
+
+   @AfterMethod(enabled=false)
+   // @AfterMethod()
     public void tearDown(){
         driver.quit();
     }
