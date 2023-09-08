@@ -33,4 +33,13 @@ public class HelperBase {
             driver.findElement(locator).sendKeys(s);
         }
     }
+
+    public void pauseSelenium(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e + "Error pauseSelenium");
+        }
+
+    }
 }

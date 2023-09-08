@@ -10,7 +10,8 @@ public class LoginTests extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition(){
-        app.getUserHelper().clickLogInHomePage();
+        app.getUserHelper().clickLogInHomePage(); ///logIN
+        app.getUserHelper().pauseSelenium(1000);
     }
 
     @Test
@@ -20,6 +21,7 @@ public class LoginTests extends TestBase {
                 .setPassword("Qwerty0010"));
         //click(By.xpath("//body/div[4]/div[1]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/form[1]/div[5]/input[1]")); ////button Login in form
         app.getUserHelper().clickOnLogInButtonIntoForm(); //button Login in form
+        app.getUserHelper().pauseSelenium(1000);
         Assert.assertTrue(app.getUserHelper().isLogInAndEmailPresent());
 
     }
@@ -30,6 +32,7 @@ public class LoginTests extends TestBase {
                 .setPassword("Qwerty0010"));
         //click(By.xpath("//body/div[4]/div[1]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/form[1]/div[5]/input[1]")); ////button Login in form
         app.getUserHelper().clickOnLogInButtonIntoForm(); //button Login in form
+        app.getUserHelper().pauseSelenium(1000);
         //Assert.assertTrue(isLogInAndEmailPresent());
         app.getUserHelper().isElementPresent(By.xpath("//span[contains(text(),'Login was unsuccessful. Please correct the errors ')]"));
 

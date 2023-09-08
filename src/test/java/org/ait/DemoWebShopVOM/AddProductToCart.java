@@ -10,6 +10,7 @@ public class AddProductToCart extends TestBase {
     public void ensurePrecondition(){
 
         app.getUserHelper().login();
+        app.getUserHelper().pauseSelenium(1000);
     }
 
     @Test
