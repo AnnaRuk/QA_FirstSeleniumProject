@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeSuite;
 
 public class TestBase {
 
-    protected final ApplicationManager app = new ApplicationManager();
+    protected static ApplicationManager app = new ApplicationManager();
 
     @BeforeSuite
     public void SetUp(){

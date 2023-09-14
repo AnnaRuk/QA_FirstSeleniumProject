@@ -9,8 +9,9 @@ public class AddProductToCart extends TestBase {
     @BeforeMethod
     public void ensurePrecondition(){
 
+        app.getUserHelper().clickLogInHomePage();
         app.getUserHelper().login();
-        app.getUserHelper().pauseSelenium(1000);
+
     }
 
     @Test

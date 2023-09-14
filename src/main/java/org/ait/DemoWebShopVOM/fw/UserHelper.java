@@ -39,7 +39,7 @@ public class UserHelper extends HelperBase{
     }
 
     public void login() {
-        clickLogInHomePage();
+
         fillLoginForm(new User().setEmail("anna999@gmail.com").setPassword("Qwerty0010"));
         clickOnLogInButtonIntoForm();
     }
