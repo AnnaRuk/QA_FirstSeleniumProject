@@ -9,7 +9,16 @@ public class CheckShopingCart extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition(){
+
+        app.getUserHelper().pauseSelenium(2000);
+
+        app.getUserHelper().clickLogInHomePage();
+
+        app.getUserHelper().pauseSelenium(2000);
+
         app.getUserHelper().login();
+
+        app.getUserHelper().pauseSelenium(2000);
         app.getCartHelper().clickButtonAddToCartBelowPeactureOfItem();
         app.getCartHelper().fillFormNameAndEmailBeforeAddIttenIntoCart("anna999", "anna999@gmail.com");
         app.getCartHelper().clickButtonAddToCartInItemCard();
@@ -24,6 +33,7 @@ public class CheckShopingCart extends TestBase {
         //2. check amount of item = >0
         Assert.assertTrue(app.getCartHelper().checkAmoundOfItemIntoCart());
         app.getCartHelper().cleanCart();
+
     }
 
 }

@@ -13,13 +13,17 @@ public class HelperBase {
         this.driver = driver;
     }
 
+//    public boolean isElementPresent(By locator){
+//        try {
+//            driver.findElement(locator);
+//            return true;
+//        } catch (NoSuchElementException ex){
+//            return false;
+//        }
+
     public boolean isElementPresent(By locator){
-        try {
-            driver.findElement(locator);
-            return true;
-        } catch (NoSuchElementException ex){
-            return false;
-        }
+        return driver.findElements(locator).size()>0;
+
     }
 
     public void click(By selector) {

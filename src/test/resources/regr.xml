@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="Regression">
+    <test name="Regression">
+        <classes>
+            <class name="org.ait.DemoWebShopVOM.HomePageTests"/>
+            <class name="org.ait.DemoWebShopVOM.LoginTests">
+
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                </methods>
+
+            </class>
+            <class name="org.ait.DemoWebShopVOM.AddProductToCart"/>
+            <class name="org.ait.DemoWebShopVOM.CheckShopingCart"/>
+        </classes>
+    </test>
+</suite>
