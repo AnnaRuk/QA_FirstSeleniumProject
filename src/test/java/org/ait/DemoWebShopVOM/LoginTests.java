@@ -6,6 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.awt.*;
+import java.io.IOException;
+
 public class LoginTests extends TestBase {
 
     @BeforeMethod
@@ -14,6 +17,7 @@ public class LoginTests extends TestBase {
         app.getUserHelper().pauseSelenium(1000);
     }
 
+    //TODO
     @Test
     public void loginPositiveTest(){
         app.getUserHelper().fillLoginForm(new User()
@@ -37,4 +41,25 @@ public class LoginTests extends TestBase {
         app.getUserHelper().isElementPresent(By.xpath("//span[contains(text(),'Login was unsuccessful. Please correct the errors ')]"));
 
     }
+
+
+ //TODO check record
+   @Test
+    public void loginPositiveTestWithScreencast() throws IOException, AWTException {
+        app.getUserHelper().deleteScreencast();
+
+        app.getUserHelper().startRecording();
+        app.getUserHelper().fillLoginForm(new User()
+                .setEmail("anna999@gmail.com")
+                .setPassword("Qwerty0010"));
+
+        app.getUserHelper().clickOnLogInButtonIntoForm(); //button Login in form
+        app.getUserHelper().pauseSelenium(2000);
+
+        app.getUserHelper().stopRecording();
+
+    }
+
+
+
 }

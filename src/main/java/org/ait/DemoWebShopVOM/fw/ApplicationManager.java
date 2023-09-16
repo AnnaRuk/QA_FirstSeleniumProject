@@ -16,6 +16,7 @@ public class ApplicationManager  {
     UserHelper userHelper;
     CartHelper cartHelper;
     HomePageHelper homePageHelper;
+    AddressHelper addressHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -37,6 +38,7 @@ public class ApplicationManager  {
         userHelper = new UserHelper(driver);
         cartHelper = new CartHelper(driver);
         homePageHelper = new HomePageHelper(driver);
+        addressHelper = new AddressHelper(driver);
 
     }
 
@@ -54,5 +56,9 @@ public class ApplicationManager  {
 
     public HomePageHelper getHomePageHelper() {
         return homePageHelper;
+    }
+
+    public AddressHelper getAddressHelper() {
+        return addressHelper;
     }
 }
