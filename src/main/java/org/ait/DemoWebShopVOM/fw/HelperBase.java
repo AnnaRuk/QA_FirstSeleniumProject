@@ -16,6 +16,7 @@ import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.NoSuchElementException;
 
 import static org.monte.media.FormatKeys.*;
@@ -54,6 +55,15 @@ public class HelperBase {
             driver.switchTo().alert();
             alert.accept(); //click OK
             return true;
+        }
+    }
+
+    public void acceptAlert(){
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 20);
+            wait.until(ExpectedConditions.alertIsPresent()).accept();
+        } catch (NoAlertPresentException ex) {
+
         }
     }
 

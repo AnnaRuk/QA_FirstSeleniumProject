@@ -1,7 +1,12 @@
 package org.ait.DemoWebShopVOM;
 
 import org.ait.DemoWebShopVOM.models.MyAcountAddresse;
+import org.ait.DemoWebShopVOM.utils.DataProviders;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -43,37 +48,13 @@ public class AddMyAddressTest extends TestBase{
     public void deleteAddress(){
         app.getUserHelper().pauseSelenium(2000);
         app.getAddressHelper().deleteAddressFromMyAccount();
+        //TODO alert
+        app.getAddressHelper().acceptAlert();
     }
 
 
-    @DataProvider
-    public Iterator <Object[]> newAddress() throws IOException {
-        List<Object[]> list = new ArrayList<>();
-        list.add(new Object[]{"TestField1","TestField1","TestField1","+05045687954"});
-        list.add(new Object[]{"TestField2","TestField2","TestField2","+05045687954"});
-        list.add(new Object[]{"TestField3","TestField3","TestField3","+05045687954"});
-        return list.iterator();
-    }
 
-
-    @DataProvider
-    public Iterator <Object[]> newAddressWithSCVFile() throws IOException {
-        List<Object[]> list = new ArrayList<>();
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/addresses.csv")));
-        String line = reader.readLine();
-        while (line !=null) {
-            String[] split = line.split(",");
-            list.add(new Object[]{new MyAcountAddresse()
-                    .setCity(split[0])
-                    .setAddress1(split[1])
-                    .setZipPostalCode(split[2])
-                    .setPhoneNumber(split[3])});
-            line = reader.readLine();
-        }
-        return list.iterator();
-    }
-
-    @Test(dataProvider = "newAddress")
+    @Test(dataProvider = "newAddress", dataProviderClass = DataProviders.class)
     public void AddAddressToMyAccountPositiveTestFromDataProvider(String city,
                                                                   String address1,
                                                                   String zip,
@@ -88,17 +69,14 @@ public class AddMyAddressTest extends TestBase{
                 .setPhoneNumber(phone));
         app.getAddressHelper().clickOnSaveButtonBelowAddressForm();
 
-        //TODO click
-        if(app.getAddressHelper().isAlertPresent()){
-            //app.getAddressHelper().click(By.cssSelector(".master-wrapper-content"));
-            app.getAddressHelper().click(By.xpath("//h1[contains(text(),'My account - Addresses')]"));
+        //TODO click Modal Window
+        app.sizeOfWindowLess();
 
-        }
         Assert.assertTrue(app.getAddressHelper().isElementPresent(By.cssSelector(".section.address-item")));
 
     }
 
-    @Test(dataProvider = "newAddressWithSCVFile")
+    @Test(dataProvider = "newAddressWithSCVFile", dataProviderClass = DataProviders.class)
     public void AddAddressToMyAccountPositiveTestFromDataProviderWithCSV(MyAcountAddresse address){
         app.getAddressHelper().clickOnAddAddressButton();
         app.getAddressHelper().addPersonalDataIntoAddressForm();

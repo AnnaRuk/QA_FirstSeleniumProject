@@ -8,10 +8,18 @@
 
                 <methods>
                     <exclude name=".*Negative.*"/>
+                    <exclude name=".*Screencast.*"/>
+
                 </methods>
 
             </class>
             <class name="org.ait.DemoWebShopVOM.AddProductToCart"/>
+            <class name="org.ait.DemoWebShopVOM.AddMyAddressTest">
+            <methods>
+                <exclude name=".*DataProvider.*"/>
+            </methods>
+
+        </class>
             <class name="org.ait.DemoWebShopVOM.CheckShopingCart"/>
         </classes>
     </test>
