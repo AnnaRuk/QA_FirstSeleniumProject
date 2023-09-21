@@ -1,11 +1,15 @@
 .gradle
-**/build/
-!src/**/build/
+
 build/classes/
 build/generated/
 build/reports/
 build/resources/
 build/tmp/
+
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
 
 # Ignore Gradle GUI config
 gradle-app.setting
