@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.ait.DemoWebShopVOM.CreateAccountTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-21T19:17:22" hostname="DESKTOP-OS617JJ" time="1.125">
+  <properties/>
+  <testcase name="newUserRegistrationPositiveTest" classname="org.ait.DemoWebShopVOM.CreateAccountTests" time="1.125"/>
+  <system-out><![CDATA[21:17:21.928 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartnewUserRegistrationPositiveTest with data: []
+21:17:23.584 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED newUserRegistrationPositiveTest
+21:17:23.584 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+21:17:23.585 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

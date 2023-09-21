@@ -1,0 +1,4 @@
+4754 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartnewUserRegistrationPositiveTest with data: []
+6410 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED newUserRegistrationPositiveTest
+6410 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+6411 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************

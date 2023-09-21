@@ -1,0 +1,46 @@
+6068 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccount with data: []
+16633 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccount
+16634 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+16635 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+16668 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProvider with data: [TestField1, TestField1, TestField1, +05045687954]
+41644 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProvider
+41645 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+41646 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+41650 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProvider with data: [TestField2, TestField2, TestField2, +05045687954]
+66898 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProvider
+66898 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+66898 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+66901 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProvider with data: [TestField3, TestField3, TestField3, +05045687954]
+92508 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProvider
+92509 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+92509 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+92517 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProviderWithCSV with data: [MyAcountAddresse{city='Berlin', phoneNumber='10018'}]
+117005 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProviderWithCSV
+117006 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+117006 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+117014 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProviderWithCSV with data: [MyAcountAddresse{city='b', phoneNumber='10018'}]
+140945 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProviderWithCSV
+140947 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+140947 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+140951 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProviderWithCSV with data: [MyAcountAddresse{city='BBBBBBBBBBBBBBBBBBBBBBBB', phoneNumber='10018'}]
+167838 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProviderWithCSV
+167838 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+167839 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+167844 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProviderWithCSV with data: [MyAcountAddresse{city='bbbbbbbbbbbbbb', phoneNumber='10018'}]
+193059 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProviderWithCSV
+193059 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+193060 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+193063 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProviderWithCSV with data: [MyAcountAddresse{city='berlin Berlin', phoneNumber='10018'}]
+217988 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProviderWithCSV
+217988 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+217989 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+217992 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProviderWithCSV with data: [MyAcountAddresse{city='Berlin-app', phoneNumber='10018'}]
+247679 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProviderWithCSV
+247679 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+247680 [Test worker] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+247684 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProviderWithCSV with data: [MyAcountAddresse{city='', phoneNumber='10018'}]
+297566 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartaddProductToCartTest with data: []
+304385 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartcheckSelectedItemIntoCartTest with data: []
+306419 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartnewUserRegistrationPositiveTest with data: []
+306456 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartisHomeComponentPresentTest with data: []
+306485 [Test worker] INFO  org.ait.DemoWebShopVOM.TestBase -- StartloginNegativeWithoutEmailTest with data: []
