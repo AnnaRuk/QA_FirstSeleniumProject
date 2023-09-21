@@ -1,0 +1,8 @@
+2050 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\AIT TR Student\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+7562 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProvider with data: [TestField1, TestField1, TestField1, +05045687954]
+17130 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProvider
+17131 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+17131 [main] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+17135 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProvider with data: [TestField2, TestField2, TestField2, +05045687954]

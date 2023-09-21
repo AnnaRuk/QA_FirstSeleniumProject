@@ -1,0 +1,7 @@
+1859 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\AIT TR Student\AppData\Local\JetBrains\IntelliJIdea2023.2\temp-testng-customsuite.xml
+
+6047 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- StartloginPositiveTestWithScreencast
+8030 [main] ERROR org.ait.DemoWebShopVOM.TestBase -- FAILED loginPositiveTestWithScreencast Screenshot: C:\AIT Course\QA\projects\QA_FirstSeleniumProject\screenshots\screen1694802934.png
+8030 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+8030 [main] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************

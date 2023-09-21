@@ -1,0 +1,7 @@
+1575 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\AIT TR Student\AppData\Local\JetBrains\IntelliJIdea2023.2\temp-testng-customsuite.xml
+
+5662 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccount
+13052 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccount
+13053 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+13053 [main] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************

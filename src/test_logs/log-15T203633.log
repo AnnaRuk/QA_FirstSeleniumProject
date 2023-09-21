@@ -1,0 +1,7 @@
+1374 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\AIT TR Student\AppData\Local\JetBrains\IntelliJIdea2023.2\temp-testng-customsuite.xml
+
+5625 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- StartloginPositiveTestWithScreencast
+14155 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED loginPositiveTestWithScreencast
+14155 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+14155 [main] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************

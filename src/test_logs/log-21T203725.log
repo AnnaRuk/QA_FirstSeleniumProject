@@ -1,0 +1,15 @@
+1441 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\AIT TR Student\AppData\Local\JetBrains\IntelliJIdea2023.2\temp-testng-customsuite.xml
+
+5389 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProvider with data: [TestField1, TestField1, TestField1, +05045687954]
+13819 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProvider
+13819 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+13820 [main] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+13825 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProvider with data: [TestField2, TestField2, TestField2, +05045687954]
+38893 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProvider
+38893 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+38893 [main] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+38900 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProvider with data: [TestField3, TestField3, TestField3, +05045687954]
+64541 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProvider
+64542 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+64543 [main] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************

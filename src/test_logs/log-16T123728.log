@@ -1,0 +1,8 @@
+1829 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\AIT TR Student\AppData\Local\JetBrains\IntelliJIdea2023.2\temp-testng-customsuite.xml
+
+6682 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProvider
+16313 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- PASSED AddAddressToMyAccountPositiveTestFromDataProvider
+16315 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- Stop
+16315 [main] ERROR org.ait.DemoWebShopVOM.TestBase -- ***********************
+16324 [main] INFO  org.ait.DemoWebShopVOM.TestBase -- StartAddAddressToMyAccountPositiveTestFromDataProvider
